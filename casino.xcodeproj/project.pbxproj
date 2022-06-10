@@ -11,6 +11,9 @@
 		7C61C2B92853A37E00F6DF32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2B82853A37E00F6DF32 /* ContentView.swift */; };
 		7C61C2BB2853A38000F6DF32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C61C2BA2853A38000F6DF32 /* Assets.xcassets */; };
 		7C61C2BE2853A38000F6DF32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C61C2BD2853A38000F6DF32 /* Preview Assets.xcassets */; };
+		7C61C2C62853A53A00F6DF32 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2C52853A53A00F6DF32 /* CardView.swift */; };
+		7C61C2C82853A69800F6DF32 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2C72853A69800F6DF32 /* Card.swift */; };
+		7C61C2CB2853CEE700F6DF32 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2CA2853CEE700F6DF32 /* mainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		7C61C2B82853A37E00F6DF32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C61C2BA2853A38000F6DF32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C61C2BD2853A38000F6DF32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C61C2C52853A53A00F6DF32 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7C61C2C72853A69800F6DF32 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7C61C2CA2853CEE700F6DF32 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,12 @@
 		7C61C2B52853A37E00F6DF32 /* casino */ = {
 			isa = PBXGroup;
 			children = (
+				7C61C2BC2853A38000F6DF32 /* Preview Content */,
+				7C61C2C92853CDE200F6DF32 /* Main Screen */,
 				7C61C2B62853A37E00F6DF32 /* casinoApp.swift */,
 				7C61C2B82853A37E00F6DF32 /* ContentView.swift */,
 				7C61C2BA2853A38000F6DF32 /* Assets.xcassets */,
-				7C61C2BC2853A38000F6DF32 /* Preview Content */,
+				7C61C2C42853A4A500F6DF32 /* Cards */,
 			);
 			path = casino;
 			sourceTree = "<group>";
@@ -65,6 +73,23 @@
 				7C61C2BD2853A38000F6DF32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C61C2C42853A4A500F6DF32 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				7C61C2C52853A53A00F6DF32 /* CardView.swift */,
+				7C61C2C72853A69800F6DF32 /* Card.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		7C61C2C92853CDE200F6DF32 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7C61C2CA2853CEE700F6DF32 /* mainView.swift */,
+			);
+			path = "Main Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C61C2B92853A37E00F6DF32 /* ContentView.swift in Sources */,
+				7C61C2C62853A53A00F6DF32 /* CardView.swift in Sources */,
 				7C61C2B72853A37E00F6DF32 /* casinoApp.swift in Sources */,
+				7C61C2CB2853CEE700F6DF32 /* mainView.swift in Sources */,
+				7C61C2C82853A69800F6DF32 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
