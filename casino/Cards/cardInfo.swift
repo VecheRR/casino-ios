@@ -32,4 +32,4 @@ enum Rank: String {
 
 let w = 63.5
 let h = 88.9
-let k = 1.5
+let k = 1.0

@@ -18,32 +18,55 @@ struct CardView: View {
         }
     }
     
+//    var body: some View {
+//        ZStack {
+//            Color.white
+//                .clipShape(RoundedRectangle(cornerRadius: 15))
+//            ZStack(alignment: .bottomTrailing) {
+//                Image(systemName: suit.rawValue)
+//                    .font(.system(size: 30))
+//                    .frame(width: w * k, height: h * k)
+//                    .foregroundColor(color)
+//            }
+//
+//            VStack {
+//                Text(rank.rawValue)
+//                Image(systemName: suit.rawValue)
+//            }
+//            .padding(5)
+//            .foregroundColor(color)
+//        }
+//    }
+    
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            ZStack(alignment: .topLeading) {
-                Image(systemName: suit.rawValue)
-                    .font(.system(size: 30))
-                    .frame(width: w * k, height: h * k)
+        ZStack {
+            Color.white
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+            
+                ZStack(alignment: .topLeading) {
+                    ZStack(alignment: .bottomTrailing) {
+                        Image(systemName: suit.rawValue)
+                            .font(.system(size: 40))
+                            .frame(width: w * k, height: h * k, alignment: .bottomTrailing)
+                            .foregroundColor(color)
+
+                    }
+
+                    VStack {
+                        Text(rank.rawValue)
+                            .font(.system(size: 26))
+                        Image(systemName: suit.rawValue)
+                            .font(.system(size: 18))
+                    }
+                    .padding(5)
                     .foregroundColor(color)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(lineWidth: 2)
-                )
-                VStack {
-                    Text(rank.rawValue)
-                    Image(systemName: suit.rawValue)
                 }
-                .padding(5)
-                .foregroundColor(color)
-            }
-            VStack {
-                Image(systemName: suit.rawValue)
-                Text(rank.rawValue)
-                    .rotationEffect(Angle(degrees: 180))
-            }
-            .padding(5)
-            .foregroundColor(color)
         }
+        .frame(width: w * k, height: h * k)
+        .overlay(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(.black, lineWidth: 2)
+        )
     }
 }
 
