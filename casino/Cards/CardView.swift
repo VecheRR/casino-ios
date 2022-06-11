@@ -43,24 +43,20 @@ struct CardView: View {
             Color.white
                 .clipShape(RoundedRectangle(cornerRadius: 15))
             
-                ZStack(alignment: .topLeading) {
-                    ZStack(alignment: .bottomTrailing) {
-                        Image(systemName: suit.rawValue)
-                            .font(.system(size: 40))
-                            .frame(width: w * k, height: h * k, alignment: .bottomTrailing)
-                            .foregroundColor(color)
-
-                    }
-
-                    VStack {
-                        Text(rank.rawValue)
-                            .font(.system(size: 26))
-                        Image(systemName: suit.rawValue)
-                            .font(.system(size: 18))
-                    }
-                    .padding(5)
-                    .foregroundColor(color)
-                }
+            Image(systemName: suit.rawValue)
+                .font(.system(size: 40))
+                .frame(width: w * k, height: h * k, alignment: .bottomTrailing)
+                .foregroundColor(color)
+            
+            VStack {
+                Text(rank.rawValue)
+                    .font(.system(size: 26))
+                Image(systemName: suit.rawValue)
+                    .font(.system(size: 18))
+            }
+            .padding(5)
+            .foregroundColor(color)
+            .frame(width: w * k, height: h * k, alignment: .topLeading)
         }
         .frame(width: w * k, height: h * k)
         .overlay(

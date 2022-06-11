@@ -37,6 +37,6 @@ struct mainView: View {
 struct mainView_Previews: PreviewProvider {
     static var previews: some View {
         mainView()
-            .previewInterfaceOrientation(.portrait)
+            .previewInterfaceOrientation(.landscapeRight)
     }
 }

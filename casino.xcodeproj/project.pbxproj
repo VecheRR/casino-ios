@@ -20,6 +20,12 @@
 		7C61C2D52854A78400F6DF32 /* tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2D42854A78400F6DF32 /* tableView.swift */; };
 		7C61C2D72854C78200F6DF32 /* pairOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2D62854C78200F6DF32 /* pairOfCards.swift */; };
 		7C61C2D92854E71100F6DF32 /* tableInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2D82854E71100F6DF32 /* tableInfo.swift */; };
+		7C61C2DE28551E7D00F6DF32 /* dealerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2DD28551E7C00F6DF32 /* dealerButton.swift */; };
+		7C61C2E02855254200F6DF32 /* infoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2DF2855254200F6DF32 /* infoScreen.swift */; };
+		7C61C2E32855293300F6DF32 /* foldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2E22855293300F6DF32 /* foldView.swift */; };
+		7C61C2E528552B7900F6DF32 /* callView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2E428552B7900F6DF32 /* callView.swift */; };
+		7C61C2E728552B9D00F6DF32 /* raiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2E628552B9D00F6DF32 /* raiseView.swift */; };
+		7C61C2E928552C5C00F6DF32 /* buttonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61C2E828552C5C00F6DF32 /* buttonInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,12 @@
 		7C61C2D42854A78400F6DF32 /* tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableView.swift; sourceTree = "<group>"; };
 		7C61C2D62854C78200F6DF32 /* pairOfCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pairOfCards.swift; sourceTree = "<group>"; };
 		7C61C2D82854E71100F6DF32 /* tableInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableInfo.swift; sourceTree = "<group>"; };
+		7C61C2DD28551E7C00F6DF32 /* dealerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealerButton.swift; sourceTree = "<group>"; };
+		7C61C2DF2855254200F6DF32 /* infoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoScreen.swift; sourceTree = "<group>"; };
+		7C61C2E22855293300F6DF32 /* foldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foldView.swift; sourceTree = "<group>"; };
+		7C61C2E428552B7900F6DF32 /* callView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = callView.swift; sourceTree = "<group>"; };
+		7C61C2E628552B9D00F6DF32 /* raiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raiseView.swift; sourceTree = "<group>"; };
+		7C61C2E828552C5C00F6DF32 /* buttonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +81,17 @@
 		7C61C2B52853A37E00F6DF32 /* casino */ = {
 			isa = PBXGroup;
 			children = (
+				7C61C2E12855291E00F6DF32 /* Play Buttons */,
+				7C61C2DA28551C2F00F6DF32 /* Dealer Button */,
+				7C61C2C42853A4A500F6DF32 /* Cards */,
 				7C61C2D32854A76500F6DF32 /* Play Table */,
 				7C61C2CE2853E66500F6DF32 /* Play Screen */,
 				7C61C2BC2853A38000F6DF32 /* Preview Content */,
 				7C61C2C92853CDE200F6DF32 /* Main Screen */,
 				7C61C2B62853A37E00F6DF32 /* casinoApp.swift */,
 				7C61C2B82853A37E00F6DF32 /* ContentView.swift */,
-				7C61C2BA2853A38000F6DF32 /* Assets.xcassets */,
-				7C61C2C42853A4A500F6DF32 /* Cards */,
 				7C61C2CC2853D64100F6DF32 /* userInfo.swift */,
+				7C61C2BA2853A38000F6DF32 /* Assets.xcassets */,
 			);
 			path = casino;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 			children = (
 				7C61C2CF2853E67B00F6DF32 /* playView.swift */,
 				7C61C2D12854A0D100F6DF32 /* backButtonView.swift */,
+				7C61C2DF2855254200F6DF32 /* infoScreen.swift */,
 			);
 			path = "Play Screen";
 			sourceTree = "<group>";
@@ -124,6 +139,25 @@
 				7C61C2D82854E71100F6DF32 /* tableInfo.swift */,
 			);
 			path = "Play Table";
+			sourceTree = "<group>";
+		};
+		7C61C2DA28551C2F00F6DF32 /* Dealer Button */ = {
+			isa = PBXGroup;
+			children = (
+				7C61C2DD28551E7C00F6DF32 /* dealerButton.swift */,
+			);
+			path = "Dealer Button";
+			sourceTree = "<group>";
+		};
+		7C61C2E12855291E00F6DF32 /* Play Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7C61C2E22855293300F6DF32 /* foldView.swift */,
+				7C61C2E428552B7900F6DF32 /* callView.swift */,
+				7C61C2E628552B9D00F6DF32 /* raiseView.swift */,
+				7C61C2E828552C5C00F6DF32 /* buttonInfo.swift */,
+			);
+			path = "Play Buttons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,14 +231,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C61C2CD2853D64100F6DF32 /* userInfo.swift in Sources */,
+				7C61C2E02855254200F6DF32 /* infoScreen.swift in Sources */,
 				7C61C2B92853A37E00F6DF32 /* ContentView.swift in Sources */,
 				7C61C2C62853A53A00F6DF32 /* cardView.swift in Sources */,
 				7C61C2B72853A37E00F6DF32 /* casinoApp.swift in Sources */,
+				7C61C2DE28551E7D00F6DF32 /* dealerButton.swift in Sources */,
 				7C61C2D02853E67B00F6DF32 /* playView.swift in Sources */,
+				7C61C2E32855293300F6DF32 /* foldView.swift in Sources */,
+				7C61C2E528552B7900F6DF32 /* callView.swift in Sources */,
+				7C61C2E728552B9D00F6DF32 /* raiseView.swift in Sources */,
 				7C61C2D52854A78400F6DF32 /* tableView.swift in Sources */,
 				7C61C2CB2853CEE700F6DF32 /* mainView.swift in Sources */,
 				7C61C2C82853A69800F6DF32 /* cardInfo.swift in Sources */,
 				7C61C2D92854E71100F6DF32 /* tableInfo.swift in Sources */,
+				7C61C2E928552C5C00F6DF32 /* buttonInfo.swift in Sources */,
 				7C61C2D72854C78200F6DF32 /* pairOfCards.swift in Sources */,
 				7C61C2D22854A0D100F6DF32 /* backButtonView.swift in Sources */,
 			);

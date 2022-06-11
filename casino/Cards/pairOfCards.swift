@@ -25,6 +25,6 @@ struct pairOfCards: View {
 
 struct pairOfCards_Previews: PreviewProvider {
     static var previews: some View {
-        pairOfCards(suit1: .Spades, suit2: .Spades, rank1: .Ten, rank2: .Ten)
+        pairOfCards(suit1: .Diamonds, suit2: .Spades, rank1: .Five, rank2: .Ten)
     }
 }
